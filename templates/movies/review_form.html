@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+</head>
+<body>
+    <h1>Create or Edit Review</h1>
+    <form action="/submit-review" method="post">
+        <label for="movie-title">Movie Title:</label><br>
+        <input type="text" id="movie-title" name="movie-title" required><br><br>
+
+        <label for="review-content">Review Content:</label><br>
+        <textarea id="review-content" name="review-content" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</body>
+</html>
