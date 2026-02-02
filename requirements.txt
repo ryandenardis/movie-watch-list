@@ -1,0 +1,6 @@
+Django==4.2.0
+
+# Other necessary dependencies can be added here, for example:
+# djangorestframework==3.12.4
+# psycopg2==2.9.1
+# gunicorn==20.1.0
