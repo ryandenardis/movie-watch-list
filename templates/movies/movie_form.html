@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create/Edit Movie</title>
+</head>
+<body>
+    <h1>{{ movie.id ? 'Edit Movie' : 'Create Movie' }}</h1>
+    <form action="{{ movie.id ? '/movies/' ~ movie.id ~ '/edit' : '/movies/new' }}" method="POST">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="{{ movie.title }}" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required>{{ movie.description }}</textarea>
+        </div>
+        <div>
+            <label for="release_date">Release Date:</label>
+            <input type="date" id="release_date" name="release_date" value="{{ movie.release_date }}" required>
+        </div>
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" value="{{ movie.genre }}" required>
+        </div>
+        <button type="submit">{{ movie.id ? 'Update' : 'Create' }}</button>
+    </form>
+    <a href="/movies">Back to Movie List</a>
+</body>
+</html>
