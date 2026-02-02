@@ -1,4 +1,4 @@
-Movie Watch List
+# Movie Watch List
 A vibe-coded web application built with Django (by way of ClaudeAI/Copilot and Gemini) that allows users to search for movies, manage a personal watchlist, and track their viewing progress.
 
 Features
